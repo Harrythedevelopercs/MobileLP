@@ -67,8 +67,11 @@
 
 @media screen and (max-width: 480px) {
 
+
+
   .secure p{
     text-align: justify!important;
+    font-size: 14px;
   }
 
   .pont{
