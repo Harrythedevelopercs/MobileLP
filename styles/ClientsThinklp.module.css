@@ -169,6 +169,10 @@
 
 @media screen and (max-width: 480px) { 
 
+  .hight{
+    text-align: justify;
+  }
+
   .ourClientsMbl{
     padding-left: 20px;
     padding-right: 20px;

@@ -25,6 +25,10 @@
 @media screen and (max-width: 480px) { 
 
   .faqsLp{
+    text-align: justify;
+  }
+
+  .faqsLp{
    padding-left: 20px;
    padding-right: 20px;
   }
