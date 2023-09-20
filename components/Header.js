@@ -109,19 +109,19 @@ const Header = () => {
                             </Link>
                         </li>
                         <li className={`${styles.megaList4} ${styles.navList}`} onClick={handleMenu}>
-                            <Link  href='#services' className={styles.megaLink}>
+                            <a  href='#services' className={styles.megaLink}>
                             SERVICES
-                            </Link>
+                            </a>
                         </li>
                         <li className={`${styles.megaList4} ${styles.navList}`} onClick={handleMenu}>
-                            <Link href='#work' className={styles.megaLink}>
+                            <a href='#work' className={styles.megaLink}>
                             OUR WORK
-                            </Link>
+                            </a>
                         </li>
                         <li className={`${styles.megaList4} ${styles.navList}`} onClick={handleMenu}>
-                            <Link href='#industy' className={styles.megaLink}>
+                            <a href='#industy' className={styles.megaLink}>
                             OUR INDUSTRIES
-                            </Link>
+                            </a>
                         </li>
                        
                         {/* <li className={`${styles.megaList3} ${styles.navList}`} onClick={handleMegaMenu3}>
@@ -1205,14 +1205,14 @@ const Header = () => {
                             </div>
                         </li> */}
                         <li className={`${styles.megaList4} ${styles.navList}`} onClick={handleMenu}>
-                            <Link href='#about' className={styles.megaLink}>
+                            <a href='#about' className={styles.megaLink}>
                                 About
-                            </Link>
+                            </a>
                         </li>
                         <li className={`${styles.megaList4} ${styles.navList}`} onClick={handleMenu}>
-                            <Link href='#contact' className={styles.megaLink}>
+                            <a href='#contact' className={styles.megaLink}>
                                 Contact
-                            </Link>
+                            </a>
                         </li>
                         <li className={`${styles.navList} ${styles.inqBtn}`} onClick={modal}>
                             <Link href='#'>ENQUIRE NOW</Link>
