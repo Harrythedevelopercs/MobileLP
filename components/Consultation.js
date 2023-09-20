@@ -18,6 +18,10 @@ const Consultation = () => {
                             <Link href='#' className={`${styles.btnConslt}`}>
                                 Claim Your Complimentary Consultancy Session Today
                             </Link>
+
+                            <Link href='#' className={`${styles.btnConslt1}`}>
+                            Get A Free Consultation
+                            </Link>
                         </Col>
                     </Row>
                 </Container>

@@ -11,13 +11,13 @@ const Ourservices = ({ services, title, title2, para, }) => {
 
     return (
         <>
-            <section className={styles.ourservices}>
+            <section className={styles.ourservices} id='services'>
                 <Container>
                     <Row className={`${styles.project} justify-content-between`}>
 
                         {title &&
-                            <Col lg={2}>
-                                <h5 className='font20 fontf font-semibold mt-1 letterspace white'> {title} </h5>
+                            <Col lg={12}>
+                                <h5 className='font20 fontf font-semibold mt-1 letterspace white center'> {title} </h5>
                             </Col>
 
                         }

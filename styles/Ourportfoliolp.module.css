@@ -43,6 +43,14 @@
   }
 }
 @media screen and (max-width: 991px) {
+
+.ourportfolio{
+  text-align: center;
+}
+.ourportfolio h5{
+  margin-bottom: 6%;
+}
+
   .rightlogo img {
     width: 100%;
   }
@@ -55,6 +63,29 @@
 
   .ourportfolio {
     padding-top: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
   }
 }
+
+
+@media screen and (max-width: 767px) { 
+
+.rightlogo a{
+  font-size: 16px;
+}
+
+.arrow{
+  display: none;
+}
+
+
+}
+@media screen and (max-width: 480px) { 
+
+ .ourportfolio{
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+  
+  
+  }

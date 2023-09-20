@@ -165,3 +165,32 @@
     padding: 50px 0 85px;
   }
 }
+
+
+@media screen and (max-width: 480px) { 
+
+  .ourClientsMbl{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bttns1 {
+    width: 100%;
+    font-size: 13px;
+}
+
+  .clients{
+    text-align: center;
+  }
+
+.clients h4{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 35px;
+}
+
+.clintSlider img{
+  height: auto;
+}
+
+}

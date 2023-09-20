@@ -91,6 +91,11 @@
 }
 
 @media screen and (max-width: 991px) {
+
+.project h3{
+  text-align: center;
+}
+
   .rightpadding,
   .leftpadding {
     height: 500px;
@@ -98,8 +103,8 @@
 
   .rightpadding,
   .leftpadding {
-    text-align: center;
-    padding: 10px;
+   
+    padding: 20px;
   }
 }
 
@@ -108,9 +113,7 @@
     padding-bottom: 25px;
   }
 
-  .arrowBtn {
-    justify-content: center;
-  }
+
 
   .cardImg {
     margin-left: auto;
@@ -128,6 +131,47 @@
 }
 
 @media screen and (max-width: 480px) {
+
+  .leftpadding p{
+    text-align: justify;
+  }
+  .rightpadding p{
+    text-align: justify;
+  }
+
+  .hearfelt{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .project h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .project p{
+    text-align: justify;
+  }
+
+.leftpadding, .rightpadding{
+  height: auto;
+ overflow: unset;
+
+ 
+}
+.rightpadding{
+height: 700px;
+}
+.leftpadding{
+  height: 700px;
+}
+
+.leftpadding li, .rightpadding li {
+  font-size: 13px;
+
+}
+
   .rightpadding img {
     display: none;
   }

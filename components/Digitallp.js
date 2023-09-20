@@ -33,7 +33,7 @@ const Digitallp = () => {
     };
 
     var ourproject1 = {
-        dots: true,
+        dots: false,
         arrows: false,
         speed: 500,
         slidesToShow: 1,
@@ -43,11 +43,11 @@ const Digitallp = () => {
 
     return (
         <>
-            <section className={styles.ourProject}>
+            <section className={styles.ourProject} id='industy'>
                 <Container>
                     <Row className={styles.project}>
-                        <Col lg={2}>
-                            <h5 className='font20 fontf font-semibold mt-1 letterspace white mb-3 mb-lg-0'>Industries</h5>
+                        <Col lg={12} className='mb-4'>
+                            <h5 className='font20 fontf font-semibold mt-1 letterspace white mb-3 mb-lg-0 t-center'>Industries</h5>
                         </Col>
                         <Col lg={12}>
                             <p className='font12 white fontf font-meduim letterspace t-center mb-0'>WE SERVE A RANGE OF SECTORS</p>

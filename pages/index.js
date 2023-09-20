@@ -213,10 +213,10 @@ export default function androidappdevelopmentcompanylp() {
     return (
         <>
             <Head>
-                <meta charset="UTF-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta charSet="UTF-8" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <title>The Professional Mobile App Development Company - Bitswits.</title>
                 <meta name="description" content="From iOS to Android and beyond BitsWits is a team of highly skilled and experienced mobile app developers who specialize in creating innovative mobile solutions." />
                 <meta property="og:locale" content="en_US" />

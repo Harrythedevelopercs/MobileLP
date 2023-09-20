@@ -123,3 +123,20 @@
     font-size: 10px;
   }
 }
+
+
+@media screen and (max-width: 480px) {
+
+  .btnHire {
+    width: 100%;
+}
+
+.resources{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.hireUs p{
+  text-align: justify!important;
+}
+
+ }

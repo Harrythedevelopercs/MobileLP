@@ -74,6 +74,11 @@
   /* =================Media Queries=================== */
   
   @media screen and (max-width: 991px) { 
+
+
+    .team .slideBox p {
+      max-width: 100px;
+  }
   
   .btnHire{
     width: 45%;

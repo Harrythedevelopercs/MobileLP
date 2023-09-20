@@ -35,8 +35,8 @@ const Ourportfoliolp = () => {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
-                    dots: true,
-                    arrows: false,
+                    dots: false,
+                    arrows: true,
 
                 }
             },
@@ -46,7 +46,17 @@ const Ourportfoliolp = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 2,
-                    dots: true,
+                    dots: false,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 2,
+                    dots: false,
                     arrows: false,
                 }
             },
@@ -55,11 +65,11 @@ const Ourportfoliolp = () => {
 
     return (
         <>
-            <section className={styles.ourportfolio}>
+            <section className={styles.ourportfolio} id='work'>
                 <Container>
                     <Row className={styles.project}>
-                        <Col lg={2}>
-                            <h5 className='font20 fontf font-semibold mt-1 letterspace black'>Work</h5>
+                        <Col lg={12}>
+                            <h5 className='font20 fontf font-semibold mt-1 letterspace black t-center'>Work</h5>
                         </Col>
                         <Col lg={12}>
                             <h2 className='font65 black fontf font-bold line60 black t-center'>Our <span className='grdiant'>Portfolio</span></h2>
@@ -72,39 +82,35 @@ const Ourportfoliolp = () => {
                     <Slider {...awardslogo} className='mt-lg-5 pt-3 ourarrows2'>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio1} className="img-fluid  mb-4" />
-                            <Link className='fontf font25 black font-bold mt-4' href='/travel-app-development'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <Link className='fontf font25 black font-bold mt-4' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio2} className="img-fluid  mb-4" />
-                            <Link className='fontf font25 black font-bold mt-4' href='/food-delivery-app-development'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <Link className='fontf font25 black font-bold mt-4' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio3} className="img-fluid  mb-4" />
-                            <Link className='fontf font25 black font-bold mt-4' href='/bacteria-app-development'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <Link className='fontf font25 black font-bold mt-4' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio4} className="img-fluid mb-4" />
-                            <Link className='fontf font25 black font-bold mt-5' href='/music-streaming-app-development'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <Link className='fontf font25 black font-bold mt-5' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio5} className="img-fluid mb-4" />
-                            <Link className='fontf font25 black font-bold mt-5' href='/ez-ride'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <Link className='fontf font25 black font-bold mt-5' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio6} className="img-fluid mb-4" />
-                            <Link className='fontf font25 black font-bold mt-5' href='/prohealth-application-development'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <Link className='fontf font25 black font-bold mt-5' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio7} className="img-fluid mb-4" />
-                            <Link className='fontf font25 black font-bold mt-5' href='/real-estate-app-development-solutions'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <Link className='fontf font25 black font-bold mt-5' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
                         </div>
                       
                     </Slider>
-                    <Row className={`mt-5 mb-0 pt-5 pt-lg-0`}>
-                        <Col lg={4} className='mx-auto'>
-                            <Link className={styles.bttns1} href="/our-work">View All Work</Link>
-                        </Col>
-                    </Row>
+                 
                 </Container>
             </section>
 

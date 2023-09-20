@@ -18,6 +18,9 @@ const Consultation2 = () => {
                             <Link href='#' className={`${styles.btnConslt}`}>
                                 Get A Free Consultation
                             </Link>
+                            <Link href='#' className={`${styles.btnConslt1}`}>
+                                Get A Free Consultation
+                            </Link>
                         </Col>
                     </Row>
                 </Container>

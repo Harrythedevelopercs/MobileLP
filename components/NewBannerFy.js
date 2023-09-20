@@ -35,14 +35,14 @@ const NewBannerFy = (props) => {
                         <div className={`${styles.banerTxt} ps-0 ps-md-3 ps-lg-0`}>
 
                             {props.subtitle ?
-                                <p className="f-montserrat font-bold f-20 mb-1 white lheight24"> {props.subtitle}</p>
+                                <p className="f-montserrat font-bold f-20 mb-4 white lheight24"> {props.subtitle}</p>
                                 :
                                 ''
                             }
 
 
                             {props.title ?
-                                <h1 className='font65 white fontf font-bold line60 mb-3'>{props.title}</h1>
+                                <h1 className='font65 white fontf font-bold line60 mb-4'>{props.title}</h1>
                                 :
                                 ''
                             }
@@ -50,7 +50,7 @@ const NewBannerFy = (props) => {
 
 
                             {props.title2 ?
-                                <p className="f-18 white f-montserrat mb-2 line30 font-bold">
+                                <p className="f-18 white f-montserrat mb-4 line30 font-bold">
                                     {props.title2}
                                 </p>
                                 :
@@ -90,7 +90,7 @@ const NewBannerFy = (props) => {
                                 </Link>
                             </div>
 
-                            <div className={`mt-2 mb-3`}>
+                            <div className={`mt-4 mb-3`}>
                                 <div className='newbit2'>
                                     <Image src={news1} alt="bitswits" className='img-fluid' />
                                     <Image src={news2} alt="bitswits" className='img-fluid' />
@@ -122,7 +122,7 @@ const NewBannerFy = (props) => {
 
                         </div>
                     </Col>
-                    <Col lg={4} className='p-0'>
+                    <Col lg={4} className='p-xl-0'>
                         <div className={styles.bannerform}>
                             <div className={styles.make}>
                                 <div className={styles.free}>

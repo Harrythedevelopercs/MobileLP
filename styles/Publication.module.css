@@ -19,3 +19,16 @@
 .publi{
     padding: 50px 0;
 }
+
+@media screen and (max-width: 480px) { 
+
+    .publi h2{
+    font-weight: bold;
+    padding-top: 20px;
+}
+.publi {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+}

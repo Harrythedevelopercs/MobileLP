@@ -1,5 +1,5 @@
 .newbanner {
-  padding: 175px 0 50px;
+  padding: 100px 0 100px;
   display: flex;
   align-items: center;
 }
@@ -11,6 +11,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .ios {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/ios.png);
@@ -18,6 +19,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .flutter {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/flutter.png);
@@ -25,6 +27,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .mobile {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/mobile.png);
@@ -32,6 +35,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .react {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/react.png);
@@ -39,6 +43,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .wearable {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/wareable.png);
@@ -46,6 +51,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .cross {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/cross.png);
@@ -53,6 +59,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .web {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/web.png);
@@ -60,6 +67,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .game2d {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/2d.png);
@@ -67,6 +75,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .game3d {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/3d.png);
@@ -74,6 +83,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .nft {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/nft.png);
@@ -81,6 +91,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .blockchain {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/blockchain.png);
@@ -88,6 +99,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .game {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/newbanner/game.png);
@@ -388,9 +400,10 @@
   }
 }
 
+
 @media screen and (max-width: 767px) {
   .newbanner {
-    padding: 150px 0 50px;
+    padding: 100px 0 100px;
   }
 
   .bannerform {
@@ -400,5 +413,20 @@
   .banerTxt h1 {
     font-size: 30px;
     line-height: 40px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .banerTxt p{
+    text-align: justify;
+  }
+
+  .newbanner {
+    padding: 50px 0 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+
   }
 }

@@ -30,8 +30,8 @@ const Partner = () => {
         <section className={styles.hearfelt}>
             <Container>
                 <Row className={`${styles.project} justify-content-between`}>
-                    <Col lg={2}>
-                        <h3 className="f-20 white f-montserrat f-700 mb-2 letterspace">Platforms</h3>
+                    <Col lg={12}>
+                        <h3 className="f-20 white f-montserrat f-700 mb-2 letterspace t-center">Platforms</h3>
                     </Col>
                     <Col lg={12}>
                         <h2 className="f-50 f-playfair f-700 white t-center"> <span className='grdiant'>

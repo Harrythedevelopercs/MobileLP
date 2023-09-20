@@ -48,8 +48,8 @@ const Hireus = (props) => {
                     <Container>
 
                         <Row className={`${styles.project} justify-content-between`}>
-                            <Col lg={2}>
-                                <h5 className='font20 fontf font-semibold mt-1 mb-3 letterspace black'>Why Hire Us?</h5>
+                            <Col lg={12}>
+                                <h5 className='font20 fontf font-semibold mt-1 mb-3 letterspace black t-center'>Why Hire Us?</h5>
                             </Col>
                             <Col lg={12}>
                                 <h2 className="black f-50 f-700 f-playfair t-center">
@@ -60,7 +60,7 @@ const Hireus = (props) => {
                         </Row>
                         <Row>
                             <Col lg={12}>
-                                <p className="black text-center f-16 f-400 t-justify mt-3 mb-5">
+                                <p className="black text-center f-16 f-400 t-justify mt-3 mb-4">
                                     As the leading mobile app development agency, we've gathered top-notch resources to create exceptional solutions for mobile applications. We have been crafting and will continue to develop unique apps across various platforms, including iOS, Android, Xamarin, and beyond. Our unbridled passion for the most cutting-edge technologies fuels us to continually evolve and innovate, allowing us to instantly provide unparalleled solutions to our valued clients.
                                 </p>
                                 <Link href='#' className={`${styles.btnHire}`}>

@@ -106,6 +106,12 @@
 }
 
 @media screen and (max-width: 991px) {
+
+.project h5{
+  text-align: center;
+}
+
+
   .ourservices {
     background-color: #272727;
     padding-top: 50px;
@@ -127,3 +133,25 @@
     width: 270px;
   }
 }
+
+
+@media screen and (max-width: 480px) {
+
+  
+
+.project h2{
+  line-height: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.project p{
+  text-align: justify;
+}
+
+
+.ourservices{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ }

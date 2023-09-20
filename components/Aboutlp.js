@@ -52,7 +52,7 @@ const Aboutlp = () => {
 
     return (
         <>
-            <section className={styles.aboutus}>
+            <section className={styles.aboutus} id='about'>
 
                 <Container>
                     <Row className='aboutfold'>
@@ -60,7 +60,7 @@ const Aboutlp = () => {
                             <h3 className='font20 fontf font-semibold mt-1 letterspace black'>About Us</h3>
                         </Col> */}
                         <Col lg={12}>
-                        <h3 className='font20 fontf font-semibold mt-1 letterspace black'>About Us</h3>
+                        <h3 className='font20 fontf font-semibold mt-1 letterspace black t-center'>About Us</h3>
                             <h2 className='font50 black fontf font-bold line60 t-center'>The Mobile <span className='grdiant'>App Development Company </span> Thriving to Master Innovation! </h2>
 
                             <p className='font18 fontf font-medium mt-4 mb-4 black'>Our expert<span className='grdiant'> mobile app developers </span> work with the world’s leading start-ups, mid-level companies and enterprises to create advanced user experiences. </p>

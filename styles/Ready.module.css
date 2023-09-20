@@ -23,17 +23,34 @@
   border: 2px solid #000;
 }
 
+.secure{
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
+
+.phone{
+  display: none!important;
+}
+
+.secure{
+  display: block;
+  margin-bottom: 50px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
   .phone {
     flex-direction: column;
     display: flex;
     align-items: center;
     text-align: center;
+    margin-bottom: 50px;
   }
 
   .btno {
-    width: 100%;
-    margin-bottom: 15%;
+    width: 50%;
+   
   }
 
   .pont {
@@ -43,7 +60,24 @@
 
 @media screen and (max-width: 767px) {
   .btno {
+    width: 50%;
+    
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .secure p{
+    text-align: justify!important;
+  }
+
+  .pont{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .btno {
     width: 100%;
-    margin-bottom: 15%;
+    
   }
 }

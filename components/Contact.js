@@ -60,7 +60,7 @@ const Contact = (props) => {
 
     return (
         <>
-            <section className={` ${styles[props.newBg]} ${styles.contact}`}>
+            <section className={` ${styles[props.newBg]} ${styles.contact}`} id='contact'>
                 <Container>
                     <Row className='justify-content-between'>
                         <Col lg={4}>
@@ -69,7 +69,7 @@ const Contact = (props) => {
                                     LET’S <span className='grdiant'>TALK ABOUT YOUR</span> PROJECTS
                                 </h2>
                                 <p className='font18 fontf mb-4'>Have a project idea? Tell us more about the details and we'll get back to you within 24 hours</p>
-                                <div className={styles.getInTch}>
+                                {/* <div className={styles.getInTch}>
                                     <div className={styles.touch}>
                                         <FaRegEnvelope />
                                         <span>info@bitswits.co</span>
@@ -95,7 +95,7 @@ const Contact = (props) => {
                                         <Link href="#"> <FaPinterest className={styles.email} /></Link>
                                         <Link href="#"> <FaBehance className={styles.email} /></Link>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </Col>
                         <Col lg={7}>
