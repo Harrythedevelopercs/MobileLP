@@ -419,7 +419,12 @@
 
 @media screen and (max-width: 480px) {
 
-  .banerTxt p{
+  .free {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .banerTxt p {
     text-align: justify;
   }
 
