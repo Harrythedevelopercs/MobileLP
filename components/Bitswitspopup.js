@@ -13,27 +13,37 @@ const Freequote = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const data = {
+
+    let headersList = {
+      "Accept": "*/*",
+      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      "Content-Type": "application/json"
+    }
+
+    let bodyContent = JSON.stringify({
       first: e.target.first.value,
       email: e.target.email.value,
       phone: e.target.phone.value,
       message: e.target.message.value,
     }
+    );
 
-    const JSONdata = JSON.stringify(data)
+    let response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      body: bodyContent,
+      headers: headersList
+    });
+    let data = await response.text();
+    console.log(data);
 
-    setScore('Wating For Send Data');
-
-    axios.post("https://jsonplaceholder.typicode.com/posts", JSONdata)
-      .then((response) => {
-        setScore('Thank You');
-        console.log(response.data);
-      });
 
     const { pathname } = Router
     if (pathname == pathname) {
       Router.push('/thank-you')
     }
+
+
+
 
   }
 

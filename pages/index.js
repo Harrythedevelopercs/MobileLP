@@ -62,7 +62,7 @@ import news5 from '/public/images/new2/5.webp'
 
 
 
-export default function androidappdevelopmentcompanylp() {
+export default function Home() {
 
 
 

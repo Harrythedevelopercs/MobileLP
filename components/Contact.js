@@ -22,43 +22,69 @@ const Contact = (props) => {
         event.preventDefault()
 
 
-        const data = {
-            firstName: event.target.fname.value,
-            lastName: event.target.lname.value,
-            email: event.target.email.value,
-            phone: event.target.phone.value,
-            message: event.target.message.value,
-        }
-
-        const JSONdata = JSON.stringify(data)
-
-        setScore('Wating For Send Data');
-
-        // axios.post("https://jsonplaceholder.typicode.com/posts", JSONdata)
-        //   .then((response) => {
-        //     setScore('Thank You');
-        //     console.log(response.data);
-        //   });
-
-        fetch('/api/email', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-            body: JSONdata
-        }).then((res) => {
-            console.log('Response received')
-            if (res.status === 200) {
-                console.log('Response succeeded!')
-            }
-        })
-
-
-        // const { pathname } = Router
-        // if (pathname == pathname) {
-        //     Router.push('/thank-you')
+        // const data = {
+        //     firstName: event.target.fname.value,
+        //     lastName: event.target.lname.value,
+        //     email: event.target.email.value,
+        //     company: event.target.company.value,
+        //     service: event.target.service.value,
+        //     source: event.target.source.value,
+        //     budget: event.target.budget.value,
+        //     message: event.target.message.value,
         // }
+
+        // const JSONdata = JSON.stringify(data)
+
+        // setScore('Wating For Send Data');
+
+
+
+        // fetch('https://wp23.cryscampus.com/BrandsWebsite/public/api/clients-information/bitswits', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Accept': 'application/json, text/plain, */*',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSONdata
+        // }).then((res) => {
+        //     console.log('Response received')
+        //     if (res.status === 200) {
+        //         console.log('Response succeeded!')
+        //     }
+        // })
+
+
+        let headersList = {
+            "Accept": "*/*",
+            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+            "Content-Type": "application/json"
+           }
+           let bodyContent = JSON.stringify({
+            "firstName": event.target.fname.value,
+            "lastName": event.target.lname.value,
+            "email": event.target.email.value,
+            "company": event.target.company.value,
+            "service": event.target.service.value,
+            "source": event.target.source.value,
+            "budget": event.target.budget.value,
+            "message": event.target.message.value,
+            "pageURL": "https://bitswits-new.vercel.app/",
+            "clientIP" : "192.168.10.1",
+            "submitedDate" : "20-2-2023",
+            "submitedTime" : "12:00 AM"
+            
+           }
+           );
+           let response = await fetch("https://wp23.cryscampus.com/BrandsWebsite/public/api/clients-information/bitswits/", {
+             method: "POST",
+             body: bodyContent,
+             headers: headersList
+           });
+           let data = await response.text();
+           console.log(data);
+
+
+      
 
     }
 
@@ -145,7 +171,7 @@ const Contact = (props) => {
                                         <Col lg={6}>
                                             <div className='mb-4'>
                                                 <label className='form-label'>Company Size</label>
-                                                <select id="company" name="Company" data-name="Company" className={styles.wSelect} required >
+                                                <select id="company" name="company" data-name="Company" className={styles.wSelect} required >
                                                     <option value="0">Company Size</option>
                                                     <option value="1">Only 1</option>
                                                     <option value="2-10">2-10</option>

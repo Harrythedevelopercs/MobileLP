@@ -17,7 +17,7 @@ import news2 from '/public/images/new1/2.webp'
 import news3 from '/public/images/new1/3.webp'
 import news4 from '/public/images/new1/4.webp'
 import news5 from '/public/images/new1/5.webp'
-
+import Router from 'next/router'
 
 const NewBannerFy = (props) => {
 
@@ -25,6 +25,81 @@ const NewBannerFy = (props) => {
 
     function modal(e) { e.preventDefault(); setShow(true); }
     function closemodal() { setShow(false); }
+
+
+
+    const handleSubmit = async (event) => {
+
+        event.preventDefault()
+
+
+        // const data = {
+        //     firstName: event.target.fname.value,
+        //     lastName: event.target.lname.value,
+        //     email: event.target.email.value,
+        //     company: event.target.company.value,
+        //     service: event.target.service.value,
+        //     source: event.target.source.value,
+        //     budget: event.target.budget.value,
+        //     message: event.target.message.value,
+        // }
+
+        // const JSONdata = JSON.stringify(data)
+
+        // setScore('Wating For Send Data');
+
+
+
+        // fetch('https://wp23.cryscampus.com/BrandsWebsite/public/api/clients-information/bitswits', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Accept': 'application/json, text/plain, */*',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSONdata
+        // }).then((res) => {
+        //     console.log('Response received')
+        //     if (res.status === 200) {
+        //         console.log('Response succeeded!')
+        //     }
+        // })
+
+
+        let headersList = {
+            "Accept": "*/*",
+            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+            "Content-Type": "application/json"
+           }
+           let bodyContent = JSON.stringify({
+            "Name": event.target.name.value,
+            "phone": event.target.phone.value,
+            "email": event.target.email.value,
+            "message": event.target.message.value,
+            "pageURL": "https://bitswits-new.vercel.app/",
+            "clientIP" : "192.168.10.1",
+            "submitedDate" : "20-2-2023",
+            "submitedTime" : "12:00 AM"
+            
+           }
+           );
+           let response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+             method: "POST",
+             body: bodyContent,
+             headers: headersList
+           });
+           let data = await response.text();
+           console.log(data);
+
+
+           const { pathname } = Router
+           if (pathname == pathname) {
+             Router.push('/thank-you')
+           }
+
+      
+
+    }
+
 
 
     return (
@@ -130,11 +205,11 @@ const NewBannerFy = (props) => {
                                         Make an obligation-free enquiry
                                     </p>
                                 </div>
-                                <form className={styles.formsbanner}>
-                                    <input type='text' className={styles.forminput} placeholder='Name' />
-                                    <input type='number' className={styles.forminput} placeholder='Phone Number' />
-                                    <input type='email' className={styles.forminput} placeholder='Email Address' />
-                                    <textarea className={styles.formarea} placeholder='Message'></textarea>
+                                <form className={styles.formsbanner} onSubmit={handleSubmit}>
+                                    <input type='text' className={styles.forminput} name='name' placeholder='Name' />
+                                    <input type='number' className={styles.forminput} name='phone' placeholder='Phone Number' />
+                                    <input type='email' className={styles.forminput} name='email' placeholder='Email Address' />
+                                    <textarea className={styles.formarea} name='message' placeholder='Message'></textarea>
                                     <div className={`${styles.take} d-flex`}>
                                         <p className='white font11 font-semibold fontf m-0'>We take your privacy seriously.<br className='d-block' /> Read our <strong>Privacy Notice</strong>.</p>
                                         <input type='Submit' className={styles.notice} />
