@@ -76,7 +76,7 @@ export default function androidappdevelopmentcompanylp() {
     const services1 = [
 
         {
-            id: '1',
+            id: '0',
             title: 'iOS App Development',
             text: (<> As a leading iOS app development company, we're experts at turning ideas into App Store sensations. Our iOS app solutions are tailored to give users an experience they'll adore. Trust our skilled iOS app developers to build an app that's both delightful and efficient. </>),
             click1: 'tab1',
@@ -85,7 +85,7 @@ export default function androidappdevelopmentcompanylp() {
             data: gameshow
         },
         {
-            id: '2',
+            id: '1',
             title: 'Android App Development',
             text: (<> Flutter is more than a buzzword for us; it's our passion. As a pioneering Flutter app development company, we employ the latest tools and techniques to offer innovative app solutions. Rely on our Flutter app developers to craft apps that resonate with your audience. </>),
             click1: 'tab2',
@@ -94,7 +94,7 @@ export default function androidappdevelopmentcompanylp() {
             data: gameshow
         },
         {
-            id: '3',
+            id: '2',
             title: 'Flutter App Development',
             text: (<> Flutter is more than a buzzword for us; it's our passion. As a pioneering Flutter app development company, we employ the latest tools and techniques to offer innovative app solutions. Rely on our Flutter app developers to craft apps that resonate with your audience. </>),
             click1: 'tab3',
@@ -103,7 +103,7 @@ export default function androidappdevelopmentcompanylp() {
             data: gameshow
         },
         {
-            id: '4',
+            id: '3',
             title: 'Web App Development',
             text: (<> Make your mark on the web with Bitswits, the web app development company that understands your vision. Our web app solutions are designed for impact, ensuring you make the right impression. Our web app developers are here to turn your dream into a digital reality. </>),
             click1: 'tab4',
@@ -112,7 +112,7 @@ export default function androidappdevelopmentcompanylp() {
             data: gameshow
         },
         {
-            id: '5',
+            id: '4',
             title: 'Custom App Development',
             text:  ( <>  Every brand is distinct, and so should be its app. As your chosen custom app development company, we offer tailor-made app solutions that mirror your brand's essence. With a team of adept custom app developers, we promise a product that stands out. </> ) ,
             click1: 'tab5',
@@ -121,7 +121,7 @@ export default function androidappdevelopmentcompanylp() {
             data: gameshow
         },
         {
-            id: '6',
+            id: '5',
             title: 'React Native App Development',
             text: (<> Embrace the best of both iOS and Android with React Native. As a seasoned React Native app development company, our app solutions ensure consistent performance across devices. Our skilled React Native app developers craft apps that spell perfection. </>),
             click1: 'tab6',

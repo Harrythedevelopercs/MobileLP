@@ -43,14 +43,14 @@ const Ourservices = ({ services, title, title2, para, }) => {
                         <Col lg={6}>
 
                             {services.map((item) => (
-                                <div>
-                                    <div className={item.data == item.click1 ? 'white font20 font-medium padd border1 cursor2 ani' : 'white font20 font-medium padd border1 cursor3 ani'} onClick={() => item.fun(item.click1)}>
+                                <div key={item.id}>
+                                    <div key={item.id} className={item.data == item.click1 ? 'white font20 font-medium padd border1 cursor2 ani' : 'white font20 font-medium padd border1 cursor3 ani'} onClick={() => item.fun(item.click1)}>
                                         {item.title}
                                     </div>
 
                                     {item.data == item.click1 &&
                                         <>
-                                            <div className='lightgrey padd font13 ani newwidth' key={item.id}>
+                                            <div key={item.id} className='lightgrey padd font13 ani newwidth'>
                                                 {item.text}
                                             </div>
                                         </>
@@ -66,16 +66,18 @@ const Ourservices = ({ services, title, title2, para, }) => {
                         </Col>
 
 
-                        <Col lg={6} className='d-lg-block'>
+                        <Col lg={6} className='d-lg-block' >
 
                             {services.map((item) => (
 
                                 <>
+                               
                                     {item.data == item.click1 &&
                                         <div className={styles.imgapost} key={item.id}>
                                             <Image alt="bitswits" src={item.img} className={item.data == item.click1 ? styles.bottom4 : styles.bottom4} />
                                         </div>
                                     }
+                                    
                                 </>
 
                             ))
