@@ -86,7 +86,7 @@ const Header = () => {
 
     return (
         <>
-            <header className={styles.header}>
+            <header className={styles.header} id='header'>
                 <div className={styles.navLogo}>
                     <Link href="/">
                         <Image alt="bitswits" className='img-fluid'

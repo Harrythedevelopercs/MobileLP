@@ -82,31 +82,31 @@ const Ourportfoliolp = () => {
                     <Slider {...awardslogo} className='mt-lg-5 pt-3 ourarrows2'>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio1} className="img-fluid  mb-4" />
-                            <Link className='fontf font25 black font-bold mt-4' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <a className='fontf font25 black font-bold mt-4' href='#header'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </a>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio2} className="img-fluid  mb-4" />
-                            <Link className='fontf font25 black font-bold mt-4' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <a className='fontf font25 black font-bold mt-4' href='#header'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </a>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio3} className="img-fluid  mb-4" />
-                            <Link className='fontf font25 black font-bold mt-4' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <a className='fontf font25 black font-bold mt-4' href='#header'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </a>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio4} className="img-fluid mb-4" />
-                            <Link className='fontf font25 black font-bold mt-5' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <a className='fontf font25 black font-bold mt-5' href='#header'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </a>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio5} className="img-fluid mb-4" />
-                            <Link className='fontf font25 black font-bold mt-5' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <a className='fontf font25 black font-bold mt-5' href='#header'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </a>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio6} className="img-fluid mb-4" />
-                            <Link className='fontf font25 black font-bold mt-5' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <a className='fontf font25 black font-bold mt-5' href='#header'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </a>
                         </div>
                         <div className={styles.rightlogo}>
                             <Image alt="bitswits" src={ourportfolio7} className="img-fluid mb-4" />
-                            <Link className='fontf font25 black font-bold mt-5' href='#'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </Link>
+                            <a className='fontf font25 black font-bold mt-5' href='#header'>View Case Studies <RiArrowRightUpLine className={styles.arrow} size={25} /> </a>
                         </div>
                       
                     </Slider>
