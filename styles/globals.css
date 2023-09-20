@@ -531,7 +531,7 @@ a {
   margin: 0;
   padding: 15px 40px 15px 15px;
   position: relative;
-  text-transform: uppercase;
+  text-transform: inherit;
   background-color: #515151;
   border-top: 2px solid #fff !important;
 }
@@ -556,7 +556,7 @@ a {
   margin: 0;
   padding: 15px 40px 15px 15px;
   position: relative;
-  text-transform: uppercase;
+  text-transform: inherit;
   background-color: #515151;
 }
 

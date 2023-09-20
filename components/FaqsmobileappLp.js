@@ -20,7 +20,7 @@ const FaqsLp = () => {
                         <Accordion defaultActiveKey="00">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>
-                                What Is Mobile Application Development?
+                                What is mobile application development?
                                     <FaAngleDown size={25} />
                                 </Accordion.Header>
                                 <Accordion.Body>
@@ -29,7 +29,7 @@ const FaqsLp = () => {
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header>
-                                Does BitsWits Offers Hybrid and Native app development?
+                                Does bitswits offers hybrid and native app development?
                                     <FaAngleDown size={25} />
                                 </Accordion.Header>
                                 <Accordion.Body>
@@ -38,7 +38,7 @@ const FaqsLp = () => {
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header>Why Choose BitsWits as a mobile app development company?
+                                <Accordion.Header>Why choose bitswits as a mobile app development company?
                                     <FaAngleDown size={25} />
                                 </Accordion.Header>
                                 <Accordion.Body>
@@ -64,7 +64,7 @@ const FaqsLp = () => {
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="5">
-                                <Accordion.Header>What industries does BitsWits cater to?
+                                <Accordion.Header>What industries does bitswits cater to?
                                     <FaAngleDown size={25} />
                                 </Accordion.Header>
                                 <Accordion.Body>
