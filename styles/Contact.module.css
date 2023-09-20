@@ -221,7 +221,27 @@
 
 /* ===============Media Queries================ */
 
+@media screen and (max-width: 1199px) {
+
+  .weell{
+    display: flex;
+  }
+
+.imgideo img{
+  width: 100%;
+}
+
+.imgideo{
+  width: 50%;
+}
+
+ }
 @media screen and (max-width: 991px) {
+
+
+  .imgideo img{
+    width: 50%;
+  }
   .cntcTxt h4 {
     font-size: 45px;
     line-height: 55px;
@@ -237,6 +257,7 @@
     padding-top: 0px;
   }
 }
+
 
 @media screen and (max-width: 767px) {
   .cntcTxt h2 {
@@ -258,4 +279,13 @@
     font-size: 18px;
     line-height: 24px;
   }
+}
+
+
+@media screen and (max-width: 480px) {  
+
+  .imgideo img{
+    width: 100%;
+  }
+
 }

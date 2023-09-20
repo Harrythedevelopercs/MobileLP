@@ -1,10 +1,15 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '@/styles/Contact.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import { FaRegEnvelope, FaPhoneAlt, FaLinkedin, FaFacebookSquare, FaInstagram, FaDribbble, FaPinterest, FaBehance } from 'react-icons/fa';
 import icon from '../public/images/footer/icon.png'
+
+import mobilelp1 from '../public/mobilelp/1.png'
+import mobilelp2 from '../public/mobilelp/2.png'
+import mobilelp3 from '../public/mobilelp/3.png'
+import mobilelp4 from '../public/mobilelp/4.png'
 
 
 const Contact = (props) => {
@@ -96,6 +101,14 @@ const Contact = (props) => {
                                         <Link href="#"> <FaBehance className={styles.email} /></Link>
                                     </div>
                                 </div> */}
+
+                                <Row className={ `${styles.weell} gx-5 mt-3` }>
+                                    <Col xl={6} className={styles.imgideo}><Image src={mobilelp1} className='img-fluid' alt='bitswits' /></Col>
+                                    <Col xl={6} className={styles.imgideo}><Image src={mobilelp2} className='img-fluid' alt='bitswits' /></Col>
+                                    <Col xl={6} className={styles.imgideo}><Image src={mobilelp3} className='img-fluid' alt='bitswits' /></Col>
+                                    <Col xl={6} className={styles.imgideo}><Image src={mobilelp4} className='img-fluid' alt='bitswits' /></Col>
+                                </Row>
+
                             </div>
                         </Col>
                         <Col lg={7}>
