@@ -211,17 +211,17 @@ const Footerlp = () => {
                   </li>
                 </ul>
                 <ul className={`${styles.contacts} ${styles.myLinks} p-0`}>
-                  <li className="mb-2">
-                    <Link href="mailto:info@bitswits.co">
+                  <li className="mb-2 mt-3">
+                    <Link href="mailto:info@bitswits.com">
                       <Image alt="bitswits" className='img-fluid'
                         src={mail}
 
                         loading="lazy"
                       />
-                      <span className="email f-uppercase">Contact Email</span>
+                      <span className="email">info@bitswits.com</span>
                     </Link>
                   </li>
-                  <li className="fw-bold">
+                  {/* <li className="fw-bold">
                     <Link href="tel:13123795987">
                       <Image alt="bitswits" className='img-fluid'
                         src={call}
@@ -240,7 +240,7 @@ const Footerlp = () => {
                       />
                       <span className="number">+1 833 500 6007</span>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </Col>
             </Row>
