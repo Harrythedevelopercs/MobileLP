@@ -5,7 +5,7 @@ import styles from '@/styles/Contact.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import { FaRegEnvelope, FaPhoneAlt, FaLinkedin, FaFacebookSquare, FaInstagram, FaDribbble, FaPinterest, FaBehance } from 'react-icons/fa';
 import icon from '../public/images/footer/icon.png'
-
+import Router from 'next/router'
 import mobilelp1 from '../public/mobilelp/1.png'
 import mobilelp2 from '../public/mobilelp/2.png'
 import mobilelp3 from '../public/mobilelp/3.png'
@@ -84,7 +84,10 @@ const Contact = (props) => {
            let data = await response.text();
            console.log(data);
 
-
+           const { pathname } = Router
+           if (pathname == pathname) {
+             Router.push('/thank-you')
+           }
       
 
     }
