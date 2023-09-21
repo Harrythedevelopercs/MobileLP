@@ -21,36 +21,32 @@ const Freequote = (props) => {
     }
 
     let bodyContent = JSON.stringify({
-
-
-      "datainarray": {
-        "Name": e.target.first.value,
-        "Email": e.target.email.value,
-        "Phone": e.target.phone.value,
-        "Message": e.target.message.value,
-      }
-
+     
+      
+        "datainarray" : {
+          "Name"  : e.target.first.value,
+          "Email" : e.target.email.value,
+          "Phone" : e.target.phone.value,
+          "Message"   : e.target.message.value,
+        }
+    
 
 
     }
     );
-    setScore('Waiting');
+
     let response = await fetch("https://brandsapi.cryscampus.com/public/api/bitswitscom/leadform", {
       method: "POST",
       body: bodyContent,
       headers: headersList
     });
     let data = await response.text();
-    setScore('Succeed');
     console.log(data);
 
 
     const { pathname } = Router
     if (pathname == pathname) {
       Router.push('/thank-you')
-
-
-
     }
 
 

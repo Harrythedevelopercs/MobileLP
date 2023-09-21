@@ -652,6 +652,12 @@ a {
   height: 24px;
 }
 
+.cold select option{
+  background-color: #000;
+  color: white;
+}
+
+
 .cursor3::after {
   position: absolute;
   content: "";

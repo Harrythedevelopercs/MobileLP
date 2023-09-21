@@ -60,22 +60,23 @@ const Contact = (props) => {
             "Content-Type": "application/json"
            }
            let bodyContent = JSON.stringify({
-            "firstName": event.target.fname.value,
-            "lastName": event.target.lname.value,
-            "email": event.target.email.value,
-            "company": event.target.company.value,
-            "service": event.target.service.value,
-            "source": event.target.source.value,
-            "budget": event.target.budget.value,
-            "message": event.target.message.value,
-            "pageURL": "https://bitswits-new.vercel.app/",
-            "clientIP" : "192.168.10.1",
-            "submitedDate" : "20-2-2023",
-            "submitedTime" : "12:00 AM"
+          
+
+            "datainarray" : {
+                "First Name": event.target.fname.value,
+                "Last Name": event.target.lname.value,
+                "Email": event.target.email.value,
+                "Company": event.target.company.value,
+                "Service": event.target.service.value,
+                "Source": event.target.source.value,
+                "Budget": event.target.budget.value,
+                "Message": event.target.message.value,
+              }
+          
             
            }
            );
-           let response = await fetch("https://wp23.cryscampus.com/BrandsWebsite/public/api/clients-information/bitswits/", {
+           let response = await fetch("https://brandsapi.cryscampus.com/public/api/bitswitscom/serviceform", {
              method: "POST",
              body: bodyContent,
              headers: headersList
@@ -139,7 +140,7 @@ const Contact = (props) => {
                         </Col>
                         <Col lg={7}>
                             <div className={`${styles.cntcForm} mt-5 mt-lg-0`}>
-                                <form onSubmit={handleSubmit}>
+                                <form onSubmit={handleSubmit} className='cold'>
                                     <Row>
                                         <Col lg={6}>
                                             <div className='mb-4'>
@@ -172,7 +173,7 @@ const Contact = (props) => {
                                             <div className='mb-4'>
                                                 <label className='form-label'>Company Size</label>
                                                 <select id="company" name="company" data-name="Company" className={styles.wSelect} required >
-                                                    <option value="0">Company Size</option>
+                                                    <option value="" disabled selected='true'>Company Size</option>
                                                     <option value="1">Only 1</option>
                                                     <option value="2-10">2-10</option>
                                                     <option value="10-20">10-20</option>
@@ -186,7 +187,7 @@ const Contact = (props) => {
                                             <div className='mb-4'>
                                                 <label className='form-label'>Service</label>
                                                 <select id="service" name="service" data-name="Service" className={styles.wSelect} required>
-                                                    <option value="">Select service</option>
+                                                    <option value="" disabled selected='true'>Select service</option>
                                                     <option value="Webflow Development">Mobile/Web Design</option>
                                                     <option value="Web Development">Web Development</option>
                                                     <option value="Web3 Design">Web3 Design</option>
@@ -201,7 +202,7 @@ const Contact = (props) => {
                                             <div className='mb-4'>
                                                 <label className='form-label'>How did you find us?</label>
                                                 <select id="source" name="source" data-name="Source" className={styles.wSelect} required>
-                                                    <option value="">How did you find us?</option>
+                                                    <option value="" disabled selected='true'>How did you find us?</option>
                                                     <option value="Google">Google</option>
                                                     <option value="Clutch">Clutch</option>
                                                     <option value="Referral">Referral</option>
@@ -218,7 +219,7 @@ const Contact = (props) => {
                                                     <span className={styles.imp}>*</span>
                                                 </label>
                                                 <select id="budget" name="budget" data-name="Budget" className={styles.wSelect} required>
-                                                    <option value="0">What is your budget for this project?</option>
+                                                    <option value="" disabled selected='true'>What is your budget for this project?</option>
                                                     <option value="Under $20,000">Under $20,000</option>
                                                     <option value="$20.000-$50,000">$20.000-$50,000</option>
                                                     <option value="$50,000-$100,000">$50,000-$100,000</option>
@@ -231,7 +232,7 @@ const Contact = (props) => {
                                         <Col lg={12}>
                                             <div className='mb-4'>
                                                 <label className='form-label'>About Your Project</label>
-                                                <textarea id="message" name="message" maxLength="5000" data-name="Message" placeholder="Tell us about your project goals &amp; timeline in a snapshot. Please include any necessary links about your project." className="form-field text-area w-input"></textarea>
+                                                <textarea id="message" name="message" required maxLength="5000" data-name="Message" placeholder="Tell us about your project goals &amp; timeline in a snapshot. Please include any necessary links about your project." className="form-field text-area w-input"></textarea>
                                             </div>
                                         </Col>
                                         <Col lg={12}>

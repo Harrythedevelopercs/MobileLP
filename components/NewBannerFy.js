@@ -21,9 +21,6 @@ import Router from 'next/router'
 
 const NewBannerFy = (props) => {
 
-    
-    const [score, setScore] = useState('Submit');
-
     const [show, setShow] = useState(false);
 
     function modal(e) { e.preventDefault(); setShow(true); }
@@ -31,9 +28,9 @@ const NewBannerFy = (props) => {
 
 
 
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (e) => {
 
-        event.preventDefault()
+        e.preventDefault()
 
 
         // const data = {
@@ -72,34 +69,40 @@ const NewBannerFy = (props) => {
             "Accept": "*/*",
             "User-Agent": "Thunder Client (https://www.thunderclient.com)",
             "Content-Type": "application/json"
-           }
-           let bodyContent = JSON.stringify({
-            "Name": event.target.name.value,
-            "phone": event.target.phone.value,
-            "email": event.target.email.value,
-            "message": event.target.message.value,
-            "pageURL": "https://bitswits-new.vercel.app/",
-            "clientIP" : "192.168.10.1",
-            "submitedDate" : "20-2-2023",
-            "submitedTime" : "12:00 AM"
-            
-           }
-           );
-           let response = await fetch("https://jsonplaceholder.typicode.com/posts", {
-             method: "POST",
-             body: bodyContent,
-             headers: headersList
-           });
-           let data = await response.text();
-           console.log(data);
+        }
+
+        let bodyContent = JSON.stringify({
 
 
-           const { pathname } = Router
-           if (pathname == pathname) {
-             Router.push('/thank-you')
-           }
+            "datainarray": {
+                "Name": e.target.first.value,
+                "Email": e.target.email.value,
+                "Phone": e.target.phone.value,
+                "Message": e.target.message.value,
+            }
 
-      
+
+
+        }
+        );
+
+
+
+        let response = await fetch("https://brandsapi.cryscampus.com/public/api/bitswitscom/leadform", {
+            method: "POST",
+            body: bodyContent,
+            headers: headersList
+        });
+        let data = await response.text();
+        console.log(data);
+
+
+        const { pathname } = Router
+        if (pathname == pathname) {
+            Router.push('/thank-you')
+        }
+
+
 
     }
 
@@ -209,7 +212,7 @@ const NewBannerFy = (props) => {
                                     </p>
                                 </div>
                                 <form className={styles.formsbanner} onSubmit={handleSubmit}>
-                                    <input type='text' className={styles.forminput} name='name' placeholder='Name' />
+                                    <input type='text' className={styles.forminput} name='first' placeholder='Name' />
                                     <input type='number' className={styles.forminput} name='phone' placeholder='Phone Number' />
                                     <input type='email' className={styles.forminput} name='email' placeholder='Email Address' />
                                     <textarea className={styles.formarea} name='message' placeholder='Message'></textarea>
