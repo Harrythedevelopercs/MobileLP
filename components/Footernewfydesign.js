@@ -29,6 +29,8 @@ import icon9 from '../public/images/awards/award9.png'
 import icon10 from '../public/images/awards/award10.png'
 import icon11 from '../public/images/awards/award11.png'
 
+import map from '../public/mobilelp/map.svg'
+
 
 const Footerlp = () => {
 
@@ -219,28 +221,18 @@ const Footerlp = () => {
                         loading="lazy"
                       />
                       <span className="email">info@bitswits.com</span>
+
                     </Link>
                   </li>
-                  {/* <li className="fw-bold">
-                    <Link href="tel:13123795987">
-                      <Image alt="bitswits" className='img-fluid'
-                        src={call}
+                <li className={styles.new}>
+                <Image alt="bitswits" className='img-fluid'
+                        src={map}
 
                         loading="lazy"
                       />
-                      <span className="number">+1 312 379 5987</span>
-                    </Link>
-                  </li>
-                  <li className="fw-bold">
-                    <Link href="tel:18335006007">
-                      <Image alt="bitswits" className='img-fluid'
-                        src={call}
-
-                        loading="lazy"
-                      />
-                      <span className="number">+1 833 500 6007</span>
-                    </Link>
-                  </li> */}
+                      <span className="email">One World Trade Center, Suite 8500, New York, New York, 10007, United States</span>
+                </li>
+                
                 </ul>
               </Col>
             </Row>
