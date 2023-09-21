@@ -104,7 +104,7 @@ const Contact = (props) => {
                                 {/* <div className={styles.getInTch}>
                                     <div className={styles.touch}>
                                         <FaRegEnvelope />
-                                        <span>info@bitswits.co</span>
+                                        <span>info@bitswits.com</span>
                                     </div>
                                     <div className={styles.touch}>
                                         <FaPhoneAlt />
