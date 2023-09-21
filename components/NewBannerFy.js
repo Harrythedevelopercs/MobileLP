@@ -212,10 +212,10 @@ const NewBannerFy = (props) => {
                                     </p>
                                 </div>
                                 <form className={styles.formsbanner} onSubmit={handleSubmit}>
-                                    <input type='text' className={styles.forminput} name='first' placeholder='Name' />
-                                    <input type='number' className={styles.forminput} name='phone' placeholder='Phone Number' />
-                                    <input type='email' className={styles.forminput} name='email' placeholder='Email Address' />
-                                    <textarea className={styles.formarea} name='message' placeholder='Message'></textarea>
+                                    <input type='text' className={styles.forminput} name='first' placeholder='Name' required />
+                                    <input type='number' className={styles.forminput} name='phone' placeholder='Phone Number' required />
+                                    <input type='email' className={styles.forminput} name='email' placeholder='Email Address' required />
+                                    <textarea className={styles.formarea} name='message' required placeholder='Message'></textarea>
                                     <div className={`${styles.take} d-flex`}>
                                         <p className='white font11 font-semibold fontf m-0'>We take your privacy seriously.<br className='d-block' /> Read our <strong>Privacy Notice</strong>.</p>
                                         <input type='Submit' className={styles.notice} />
