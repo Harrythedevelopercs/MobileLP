@@ -1,39 +1,10 @@
 import Head from 'next/head'
-import Script from 'next/script'
-import Slider from 'react-slick'
-import { Container, Row } from 'react-bootstrap'
-import Homebanner from '@/components/Homebanner'
-import servicesmobile from '/public/images/servicesmobilephone/1.webp'
-import servicesmobile2 from '/public/images/servicesmobilephone/2.webp'
-import servicesmobile3 from '/public/images/servicesmobilephone/3.webp'
-import servicesmobile4 from '/public/images/servicesmobilephone/4.webp'
-import servicesmobile5 from '/public/images/servicesmobilephone/5.webp'
-import servicesmobile6 from '/public/images/servicesmobilephone/6.webp'
-import Endorsements from '@/components/Endorsements'
-import Homevideo from '@/components/Homevideo'
-import Whatourclients from '@/components/Whatourclients'
 import Partner from '@/components/Partner'
-import Servicesmobile from '@/components/Servicesmobile'
 import Publication from '@/components/Publication'
-import Range from '@/components/Range'
-import Integration from '@/components/Integration'
 import Hireus from '@/components/Hireus'
 import Consultation from '@/components/Consultation'
-import Faqs from '@/components/Faqs'
-import GetInTouch from '@/components/GetInTouch'
-import Locations from '@/components/Locations'
-import Videotestimonial from '@/components/Videotestimonial'
-import Findfood from '@/components/Findfood'
-import Cab from '@/components/Cab'
-import Musicapp from '@/components/Musicapp'
-import Consultancy from '@/components/Consultancy'
-import About from '@/components/About'
 import ClientsThinklp from '@/components/ClientsThinklp'
 import Ready from '@/components/Ready'
-import Scalable from '@/components/Scalable'
-import Enhanced from '@/components/Enhanced'
-import Transforming from '@/components/Transforming'
-
 import React, { useState } from 'react';
 import icon1 from '../public/images/mobilelpservices/sideimg.png'
 import icon2 from '../public/images/mobilelpservices/game.png'
@@ -43,16 +14,13 @@ import icon5 from '../public/images/mobilelpservices/webflow.png'
 import icon6 from '../public/images/mobilelpservices/artifical.png'
 import Ourservices from '@/components/Ourserviceslp'
 import NewBannerFy from '@/components/NewBannerFy'
-import NewSliderFy from '@/components/NewSliderFy'
 import Aboutlp from '@/components/Aboutlp'
-import Lookingforlp from '@/components/Lookingforlp'
 import Ourportfoliolp from '@/components/Ourportfoliolp'
 import Digitallp from '@/components/Digitallp'
 import Contact from '@/components/Contact'
 import NewDecFy from '@/components/NewDecFy'
 import FaqsLp from '@/components/FaqsmobileappLp'
 import Consultation2 from '@/components/Consultation2'
-//
 import Image from 'next/image'
 import news1 from '/public/images/new2/1.webp'
 import news2 from '/public/images/new2/2.webp'
@@ -134,81 +102,10 @@ export default function Home() {
     ]
 
 
-    const fine = [
+   
 
-        {
-            img: servicesmobile,
-            title: (<>Android <br></br>
-                Application Development </>),
-            text: <>
-                We take Android app development to the next level by following a comprehensive approach, from ideation to launch. Our experienced developers use the latest technologies to create customized and scalable Android apps that exceed client expectations.
-            </>
-        },
+  
 
-        {
-            img: servicesmobile2,
-            title: (<>Web <br></br>
-                App Development </>),
-            text: <>
-                We offer end-to-end web app development company. Our team of skilled web app developers utilizes the latest technologies to create scalable and secure web applications that cater to your business needs. Hire our web app developers today!
-            </>
-        },
-
-        {
-            img: servicesmobile3,
-            title: (<>Flutter <br></br>
-                App Development </>),
-            text: <>
-                Our team of expert Flutter app developers at Bitswits use the latest tools and techniques to build cross-platform mobile apps tailored to your business needs. From ideation to deployment, we ensure a smooth and efficient development process.
-
-
-            </>
-        },
-
-        {
-            img: servicesmobile4,
-            title: (<> React Native <br></br>
-                App Development </>),
-            text: <>
-                Our React Native app developers specialize in creating top-notch, performance-oriented native mobile apps for Android and iOS platforms. We follow a robust development process and utilize the latest technologies to deliver customized solutions that meet our clients' business objectives.
-            </>
-        },
-
-        {
-            img: servicesmobile5,
-            title: (<>Cross Platform <br></br>
-                App Development </>),
-            text: <>
-                We prioritize creating seamless user experiences in cross-platform app development. Our expert team uses cutting-edge tools and frameworks to build high-quality apps that work flawlessly across multiple platforms, ensuring maximum reach and engagement for your business.
-            </>
-        },
-
-        {
-            img: servicesmobile6,
-            title: (<>IOS <br></br>
-                Application Development </>),
-            text: <>
-                We bring your iOS app ideas to life by using our comprehensive approach to development, combining UI/UX app design, agile development methodologies, and the latest tools and frameworks. Our experienced iOS developers deliver innovative and customized apps!
-            </>
-        },
-
-
-    ]
-
-    const services = 'SERVICES'
-    const app = <>  Transforming Visions into Reality with Exceptional Mobile App Solutions </>
-    const revolutionize = 'Revolutionize your business with a mobile app development firm dedicated to providing you with the most innovative apps. Take advantage of their extensive offerings for essential platforms like iOS, and Android for maximum impact.'
-
-
-    let rangSlider = {
-        dots: true,
-        arrows: false,
-        autoplay: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
 
     return (
         <>
@@ -223,9 +120,9 @@ export default function Home() {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="The Professional Mobile App Development Company - Bitswits." />
                 <meta property="og:description" content="From iOS to Android and beyond BitsWits is a team of highly skilled and experienced mobile app developers who specialize in creating innovative mobile solutions." />
-                <meta property="og:url" content="https://bitswits.co/mobile-app-development-company/" />
+                <meta property="og:url" content="https://bitswits.com/mobile-app-development-company/" />
                 <meta property="og:site_name" content="The Professional Mobile App Development Company - Bitswits." />
-                <link rel="canonical" href="https://bitswits.co/mobile-app-development-company/" />
+                <link rel="canonical" href="https://bitswits.com/mobile-app-development-company/" />
                 <meta name="msvalidate.01" content="7BBFFA763CEB48CAC0828E22D44DD12B" />
                 <meta name="DC.title" content="mobile app development company, hire mobile app developers, mobile app development services" />
                 <meta name="geo.region" content="US-CA" />

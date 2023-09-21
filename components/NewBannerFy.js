@@ -21,6 +21,9 @@ import Router from 'next/router'
 
 const NewBannerFy = (props) => {
 
+    
+    const [score, setScore] = useState('Submit');
+
     const [show, setShow] = useState(false);
 
     function modal(e) { e.preventDefault(); setShow(true); }

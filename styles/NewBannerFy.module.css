@@ -221,7 +221,7 @@
   border-radius: 10px;
   margin-bottom: 2%;
   padding-left: 4%;
-  color: #fff;
+  color: #000;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -256,7 +256,7 @@
   margin-bottom: 4%;
   padding-left: 4%;
   padding-top: 4%;
-  color: white;
+  color: black;
   font-family: "Montserrat", sans-serif;
   resize: none;
 }

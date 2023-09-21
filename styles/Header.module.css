@@ -1,3 +1,8 @@
+
+.popquote{
+  position: relative;
+}
+
 .header {
   height: 65px;
   width: 100%;
@@ -370,8 +375,8 @@
 
 .cross {
   position: absolute;
-  top: -15px;
-  right: -17px;
+  top: 50px;
+  right: 13px;
   color: white;
   width: 35px;
   height: 35px;
@@ -504,6 +509,9 @@
 }
 
 @media screen and (max-width: 991px) {
+
+  
+
   .cross {
     top: 10px;
     right: 10px;
@@ -713,7 +721,18 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .modalnew{
+    margin-top: 10%;
+  }
+}
 @media screen and (max-width: 480px) {
+
+  .modalnew{
+    margin-top: 20%;
+  }
+
+  
   .navLogo {
     width: 60%;
   }

@@ -1293,6 +1293,12 @@ input::-webkit-inner-spin-button {
   margin: 0 auto;
 }
 
+.selectopti select option {
+  background-color: black;
+  color: white; /* Set the text color to make it readable */
+}
+
+
 /* ===============Media Queries================ */
 
 @media screen and (max-width: 1920px) {
